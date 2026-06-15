@@ -1,4 +1,4 @@
--> Definições de REST
+-> Definições de REST, tipos de parametros
 
 - Rest é um padrao arquiterural basicamente leve por natureza. Então 
 quando temos limitaçoes de banda perfira web services REST;
@@ -12,3 +12,6 @@ quando temos limitaçoes de banda perfira web services REST;
 - Response é toda a resposta de um requeste que fazemos em uma api
 
 
+-> Tipos de parametros:
+
+- 
