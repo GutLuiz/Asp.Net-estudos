@@ -17,7 +17,7 @@ namespace Estudos.Controllers.Operacoes
             }
             return BadRequest(0);
         }
-
+        [HttpGet("/sub/{n1}/{n2}")]
         public IActionResult GetSubtrai(string n1, string n2)
         {
             if (isNumeric(n1) && isNumeric(n2))
@@ -27,7 +27,7 @@ namespace Estudos.Controllers.Operacoes
             }
             return BadRequest(0);
         }
-
+        [HttpGet("/mul/{n1}/{n2}")]
         public IActionResult GetMultiplica(string n1, string n2)
         {
             if (isNumeric(n1) && isNumeric(n2))
@@ -37,7 +37,7 @@ namespace Estudos.Controllers.Operacoes
             }
             return BadRequest(0);
         }
-
+        [HttpGet("/div/{n1}/{n2}")]
         public IActionResult GetDivide(string n1, string n2)
         {
             if (isNumeric(n1) && isNumeric(n2))
@@ -47,7 +47,7 @@ namespace Estudos.Controllers.Operacoes
             }
             return BadRequest(0);
         }
-
+        [HttpGet("/med/{n1}/{n2}")]
         public IActionResult GetMedia(string n1, string n2)
         {
             if (isNumeric(n1) && isNumeric(n2))
@@ -57,9 +57,6 @@ namespace Estudos.Controllers.Operacoes
             }
             return BadRequest(0);
         }
-
-
-
 
         private int ConvertToDecimal(string n2)
         {
